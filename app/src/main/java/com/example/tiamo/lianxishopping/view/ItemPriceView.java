@@ -54,8 +54,10 @@ public class ItemPriceView extends LinearLayout implements View.OnClickListener 
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+
                 try {
-                    list.get(position).setNum(Integer.parseInt(String.valueOf(s)));
+                    num = Integer.parseInt(String.valueOf(s));
+                    list.get(position).setNum(num);
                 }catch (Exception e){
                     list.get(position).setNum(1);
                 }
