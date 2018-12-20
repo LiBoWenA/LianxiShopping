@@ -1,5 +1,6 @@
 package com.example.tiamo.lianxishopping;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -43,6 +44,7 @@ public class LoginActivity extends AppCompatActivity implements IView,View.OnCli
         bQx.setOnClickListener(this);
         tPrice = findViewById(R.id.price);
         tNum = findViewById(R.id.num);
+        findViewById(R.id.back).setOnClickListener(this);
         iPersenter = new IPersenterImpl(this);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -91,6 +93,10 @@ public class LoginActivity extends AppCompatActivity implements IView,View.OnCli
             case R.id.z_qx:
                 getNumPrice(bQx.isChecked());
                 shopAdapter.notifyDataSetChanged();
+                break;
+            case R.id.back:
+                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                startActivity(intent);
                 break;
                 default:
                     break;

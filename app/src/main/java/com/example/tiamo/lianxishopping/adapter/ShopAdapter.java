@@ -58,7 +58,7 @@ public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ViewHolder> {
 
                 boolean isAllCheck = true;
                 for (Bean.DataBean.listBean list: bean) {
-                    if (! list.isCheck()){
+                    if (!list.isCheck()){
                         isAllCheck = false;
                         break;
                     }

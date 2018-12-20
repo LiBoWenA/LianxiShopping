@@ -32,7 +32,7 @@ public class PullLayout extends LinearLayout {
             View view = getChildAt(i);
             if (left != 0){
                 if ((left + view.getMeasuredWidth())>width){
-                    top += mchildMaxHeight;
+                    top += mchildMaxHeight + mHSpace;
                     left = 0;
                 }
             }

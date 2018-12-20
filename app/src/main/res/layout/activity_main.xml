@@ -7,29 +7,15 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+
+    <com.example.tiamo.lianxishopping.view.ViewTitle
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:padding="10dp"
         >
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8"
-            android:id="@+id/ed_search"
-            />
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:id="@+id/btn_search"
-            android:text="搜索"
-            />
 
-    </LinearLayout>
+    </com.example.tiamo.lianxishopping.view.ViewTitle>
 
     <TextView
         android:layout_width="match_parent"
